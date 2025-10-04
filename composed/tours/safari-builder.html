@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Build Your Safari | Davag - Kenya Safari Tours</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.min.css" rel="stylesheet" />
+    <link href="assets/css/safari-builder-integrated.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><span style="font-size: 24px; font-weight: bold; color: #FF6B35;">DAVAG</span><span style="font-size: 12px; color: #666;"> SAFARI</span></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="index.html#service">Safari Packages</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="index.html#destination">Game Parks</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="safari-builder.html">Book Safari</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="index.html#testimonial">Reviews</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="index.html#!">Contact</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" href="safari-builder.html">Book Now</a></li>
+              <li class="nav-item dropdown px-3 px-lg-0"> <a class="d-inline-block ps-0 py-2 pe-3 text-decoration-none dropdown-toggle fw-medium" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EN</a>
+                <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem;" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#!">English</a></li>
+                  <li><a class="dropdown-item" href="#!">Swahili</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Safari Builder Hero Section -->
+      <section class="safari-builder-hero" style="padding-top: 8rem; padding-bottom: 3rem;">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h1 class="display-4 fw-bold mb-4">Build Your Perfect Safari Adventure</h1>
+              <p class="lead mb-4">Create a personalized Kenyan safari experience tailored to your preferences. From wildlife destinations to luxury accommodations, we'll help you plan every detail.</p>
+              <div class="safari-builder-progress">
+                <div class="progress-header">
+                  <span class="progress-text">Your Progress</span>
+                  <span class="progress-percentage" id="progressPercentage">0%</span>
+                </div>
+                <div class="progress-bar-container">
+                  <div class="progress-bar-fill" id="progressBarFill"></div>
+                </div>
+                <div class="progress-steps">
+                  <span class="step-indicator active" data-step="1">1</span>
+                  <span class="step-indicator" data-step="2">2</span>
+                  <span class="step-indicator" data-step="3">3</span>
+                  <span class="step-indicator" data-step="4">4</span>
+                  <span class="step-indicator" data-step="5">5</span>
+                  <span class="step-indicator" data-step="6">6</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img src="assets/img/hero/hero-img.png" alt="Safari Adventure" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Step 1: Destination Selection -->
+      <section class="safari-step active" id="step1" data-step="1">
+        <div class="container">
+          <div class="step-header text-center mb-5">
+            <h2 class="step-title">Choose Your Safari Destinations</h2>
+            <p class="step-subtitle">Select from Kenya's most spectacular wildlife destinations</p>
+          </div>
+
+          <!-- Destination Search -->
+          <div class="destination-search-container mb-5">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="search-input-container">
+                  <input type="text" class="form-control search-input" id="destinationSearch" placeholder="Search destinations (e.g., Masai Mara, Amboseli, Big Five...)">
+                  <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="search-filters mt-3">
+                  <button class="filter-btn active" data-filter="all">All Destinations</button>
+                  <button class="filter-btn" data-filter="big-five">Big Five</button>
+                  <button class="filter-btn" data-filter="migration">Migration</button>
+                  <button class="filter-btn" data-filter="cultural">Cultural</button>
+                  <button class="filter-btn" data-filter="photography">Photography</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Selected Destinations Summary -->
+          <div class="selected-destinations-summary mb-4" id="selectedSummary" style="display: none;">
+            <div class="summary-header">
+              <h5>Selected Destinations</h5>
+              <span class="selected-count" id="selectedCount">0 selected</span>
+            </div>
+            <div class="selected-list" id="selectedList"></div>
+          </div>
+
+          <!-- Destination Grid -->
+          <div class="destinations-grid" id="destinationsGrid">
+            <!-- Destinations will be populated by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Step 2: Dates Selection -->
+      <section class="safari-step" id="step2" data-step="2">
+        <div class="container">
+          <div class="step-header text-center mb-5">
+            <h2 class="step-title">When Would You Like to Go?</h2>
+            <p class="step-subtitle">Choose your safari dates for the best wildlife experience</p>
+          </div>
+          
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="date-selection-card">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="date-input-group">
+                      <label class="form-label">Departure Date</label>
+                      <input type="date" class="form-control date-input" id="startDate">
+                      <small class="text-muted">When you'd like to start your safari</small>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="date-input-group">
+                      <label class="form-label">Return Date</label>
+                      <input type="date" class="form-control date-input" id="endDate">
+                      <small class="text-muted">When you'd like to return</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Season Information -->
+              <div class="season-guide mt-5">
+                <h4 class="mb-4">Best Times to Visit Kenya</h4>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="season-card">
+                      <div class="season-month">July - October</div>
+                      <div class="season-title">Great Migration</div>
+                      <div class="season-description">Witness millions of wildebeest in Masai Mara</div>
+                      <div class="season-weather">🌤️ Dry Season</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="season-card">
+                      <div class="season-month">January - March</div>
+                      <div class="season-title">Calving Season</div>
+                      <div class="season-description">Perfect for photography, fewer crowds</div>
+                      <div class="season-weather">☀️ Warm & Dry</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="season-card">
+                      <div class="season-month">June - September</div>
+                      <div class="season-title">Peak Wildlife</div>
+                      <div class="season-description">Excellent game viewing, clear skies</div>
+                      <div class="season-weather">🌞 Perfect Weather</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Step 3: Group Details -->
+      <section class="safari-step" id="step3" data-step="3">
+        <div class="container">
+          <div class="step-header text-center mb-5">
+            <h2 class="step-title">Tell Us About Your Group</h2>
+            <p class="step-subtitle">Help us customize the perfect safari experience</p>
+          </div>
+          
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="group-details-card">
+                <div class="group-counters">
+                  <div class="counter-item">
+                    <div class="counter-info">
+                      <h5>Adults</h5>
+                      <p>18+ years</p>
+                    </div>
+                    <div class="counter-controls">
+                      <button type="button" class="counter-btn" onclick="decrementCounter('adults')">−</button>
+                      <span class="counter-value" id="adultsCount">2</span>
+                      <button type="button" class="counter-btn" onclick="incrementCounter('adults')">+</button>
+                    </div>
+                  </div>
+                  
+                  <div class="counter-item">
+                    <div class="counter-info">
+                      <h5>Children</h5>
+                      <p>3-17 years</p>
+                    </div>
+                    <div class="counter-controls">
+                      <button type="button" class="counter-btn" onclick="decrementCounter('children')">−</button>
+                      <span class="counter-value" id="childrenCount">0</span>
+                      <button type="button" class="counter-btn" onclick="incrementCounter('children')">+</button>
+                    </div>
+                  </div>
+                  
+                  <div class="counter-item">
+                    <div class="counter-info">
+                      <h5>Infants</h5>
+                      <p>0-2 years</p>
+                    </div>
+                    <div class="counter-controls">
+                      <button type="button" class="counter-btn" onclick="decrementCounter('infants')">−</button>
+                      <span class="counter-value" id="infantsCount">0</span>
+                      <button type="button" class="counter-btn" onclick="incrementCounter('infants')">+</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Special Interests -->
+                <div class="special-interests mt-4">
+                  <h5 class="mb-3">Special Interests (Optional)</h5>
+                  <div class="interests-grid">
+                    <label class="interest-item">
+                      <input type="checkbox" class="interest-checkbox" value="photography">
+                      <span class="interest-label">📸 Photography</span>
+                    </label>
+                    <label class="interest-item">
+                      <input type="checkbox" class="interest-checkbox" value="birdwatching">
+                      <span class="interest-label">🦅 Bird Watching</span>
+                    </label>
+                    <label class="interest-item">
+                      <input type="checkbox" class="interest-checkbox" value="cultural">
+                      <span class="interest-label">🏛️ Cultural Experiences</span>
+                    </label>
+                    <label class="interest-item">
+                      <input type="checkbox" class="interest-checkbox" value="luxury">
+                      <span class="interest-label">✨ Luxury Experience</span>
+                    </label>
+                    <label class="interest-item">
+                      <input type="checkbox" class="interest-checkbox" value="adventure">
+                      <span class="interest-label">🎯 Adventure Activities</span>
+                    </label>
+                    <label class="interest-item">
+                      <input type="checkbox" class="interest-checkbox" value="conservation">
+                      <span class="interest-label">🌱 Conservation Tours</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Step 4: Generated Itinerary -->
+      <section class="safari-step" id="step4" data-step="4">
+        <div class="container">
+          <div class="step-header text-center mb-5">
+            <h2 class="step-title">Your Personalized Safari Itinerary</h2>
+            <p class="step-subtitle">Here's what we've planned for your adventure</p>
+          </div>
+          
+          <div class="itinerary-container" id="itineraryContainer">
+            <!-- Generated itinerary will be inserted here -->
+          </div>
+
+          <div class="customization-panel mt-5">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="customization-card">
+                  <h5>Accommodation Level</h5>
+                  <div class="accommodation-options">
+                    <label class="accommodation-option">
+                      <input type="radio" name="accommodation" value="budget">
+                      <div class="option-content">
+                        <span class="option-title">Budget</span>
+                        <span class="option-price">$150-250/night</span>
+                        <span class="option-description">Comfortable tented camps</span>
+                      </div>
+                    </label>
+                    <label class="accommodation-option">
+                      <input type="radio" name="accommodation" value="mid-range" checked>
+                      <div class="option-content">
+                        <span class="option-title">Mid-Range</span>
+                        <span class="option-price">$300-500/night</span>
+                        <span class="option-description">Safari lodges with amenities</span>
+                      </div>
+                    </label>
+                    <label class="accommodation-option">
+                      <input type="radio" name="accommodation" value="luxury">
+                      <div class="option-content">
+                        <span class="option-title">Luxury</span>
+                        <span class="option-price">$600-1200/night</span>
+                        <span class="option-description">Premium luxury camps</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="customization-card">
+                  <h5>Transportation</h5>
+                  <div class="transport-options">
+                    <label class="transport-option">
+                      <input type="radio" name="transport" value="4x4" checked>
+                      <div class="option-content">
+                        <span class="option-title">4x4 Safari Vehicle</span>
+                        <span class="option-description">Standard game drive vehicle</span>
+                      </div>
+                    </label>
+                    <label class="transport-option">
+                      <input type="radio" name="transport" value="private">
+                      <div class="option-content">
+                        <span class="option-title">Private Vehicle</span>
+                        <span class="option-description">Exclusive use with guide</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Step 5: Add-ons & Pricing -->
+      <section class="safari-step" id="step5" data-step="5">
+        <div class="container">
+          <div class="step-header text-center mb-5">
+            <h2 class="step-title">Enhance Your Safari Experience</h2>
+            <p class="step-subtitle">Add special experiences to make your trip unforgettable</p>
+          </div>
+          
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="addons-grid">
+                <div class="addon-card">
+                  <div class="addon-image">
+                    <img src="assets/img/category/icon1.png" alt="Airport Transfer">
+                  </div>
+                  <div class="addon-content">
+                    <h5>Airport Transfer</h5>
+                    <p>Comfortable pickup and drop-off service</p>
+                    <div class="addon-price">$50 <span>per group</span></div>
+                  </div>
+                  <div class="addon-toggle">
+                    <input type="checkbox" class="addon-checkbox" id="airportTransfer" value="50">
+                    <label for="airportTransfer" class="toggle-label"></label>
+                  </div>
+                </div>
+
+                <div class="addon-card">
+                  <div class="addon-image">
+                    <img src="assets/img/category/icon2.png" alt="Balloon Safari">
+                  </div>
+                  <div class="addon-content">
+                    <h5>Hot Air Balloon Safari</h5>
+                    <p>Breathtaking aerial views of the savanna</p>
+                    <div class="addon-price">$450 <span>per person</span></div>
+                  </div>
+                  <div class="addon-toggle">
+                    <input type="checkbox" class="addon-checkbox" id="balloonSafari" value="450">
+                    <label for="balloonSafari" class="toggle-label"></label>
+                  </div>
+                </div>
+
+                <div class="addon-card">
+                  <div class="addon-image">
+                    <img src="assets/img/category/icon3.png" alt="Cultural Visit">
+                  </div>
+                  <div class="addon-content">
+                    <h5>Maasai Village Visit</h5>
+                    <p>Authentic cultural experience with local community</p>
+                    <div class="addon-price">$75 <span>per person</span></div>
+                  </div>
+                  <div class="addon-toggle">
+                    <input type="checkbox" class="addon-checkbox" id="culturalVisit" value="75">
+                    <label for="culturalVisit" class="toggle-label"></label>
+                  </div>
+                </div>
+
+                <div class="addon-card">
+                  <div class="addon-image">
+                    <img src="assets/img/category/icon4.png" alt="Extra Night">
+                  </div>
+                  <div class="addon-content">
+                    <h5>Extra Night in Nairobi</h5>
+                    <p>Luxury hotel accommodation in the city</p>
+                    <div class="addon-price">$200 <span>per night</span></div>
+                  </div>
+                  <div class="addon-toggle">
+                    <input type="checkbox" class="addon-checkbox" id="extraNight" value="200">
+                    <label for="extraNight" class="toggle-label"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4">
+              <div class="pricing-summary">
+                <h5>Your Safari Summary</h5>
+                <div class="pricing-details" id="pricingDetails">
+                  <!-- Pricing will be calculated and inserted here -->
+                </div>
+                <div class="total-price">
+                  <span class="total-label">Total Price</span>
+                  <span class="total-amount" id="totalAmount">$0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Step 6: Booking Details -->
+      <section class="safari-step" id="step6" data-step="6">
+        <div class="container">
+          <div class="step-header text-center mb-5">
+            <h2 class="step-title">Complete Your Booking</h2>
+            <p class="step-subtitle">You're just one step away from your dream safari!</p>
+          </div>
+          
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="booking-form">
+                <div class="form-section">
+                  <h5>Contact Information</h5>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>First Name *</label>
+                        <input type="text" class="form-control" id="firstName" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Last Name *</label>
+                        <input type="text" class="form-control" id="lastName" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Email Address *</label>
+                        <input type="email" class="form-control" id="email" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Phone Number *</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Special Requests</label>
+                    <textarea class="form-control" id="specialRequests" rows="3" placeholder="Any dietary requirements, accessibility needs, or special requests..."></textarea>
+                  </div>
+                </div>
+
+                <div class="form-section">
+                  <h5>Payment Method</h5>
+                  <div class="payment-methods">
+                    <label class="payment-method">
+                      <input type="radio" name="payment" value="mpesa" checked>
+                      <div class="payment-content">
+                        <span class="payment-icon">📱</span>
+                        <span class="payment-name">M-PESA</span>
+                        <span class="payment-description">Mobile payment (Kenya)</span>
+                      </div>
+                    </label>
+                    <label class="payment-method">
+                      <input type="radio" name="payment" value="card">
+                      <div class="payment-content">
+                        <span class="payment-icon">💳</span>
+                        <span class="payment-name">Credit/Debit Card</span>
+                        <span class="payment-description">Visa, Mastercard, etc.</span>
+                      </div>
+                    </label>
+                    <label class="payment-method">
+                      <input type="radio" name="payment" value="split">
+                      <div class="payment-content">
+                        <span class="payment-icon">👥</span>
+                        <span class="payment-name">Split Payment</span>
+                        <span class="payment-description">Share payment with group</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="booking-summary-final">
+                  <h5>Booking Summary</h5>
+                  <div id="finalBookingSummary">
+                    <!-- Final summary will be inserted here -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Step Navigation -->
+      <div class="step-navigation">
+        <div class="container">
+          <div class="nav-content">
+            <button class="btn btn-outline-secondary" id="prevStepBtn" onclick="previousStep()" style="display: none;">
+              <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            <button class="btn btn-primary" id="nextStepBtn" onclick="nextStep()">
+              Next <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </main><!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+    <!-- Success Modal (only for final confirmation) -->
+    <div class="modal fade" id="successModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center p-5">
+            <div class="success-icon mb-4">
+              <i class="fas fa-check-circle text-success" style="font-size: 4rem;"></i>
+            </div>
+            <h3 class="mb-3">🎉 Safari Booked Successfully!</h3>
+            <p class="mb-4">Your booking reference is: <strong id="bookingReference"></strong></p>
+            <div class="confirmation-actions">
+              <button class="btn btn-primary me-3" onclick="downloadVoucher()">
+                <i class="fas fa-download"></i> Download Voucher
+              </button>
+              <button class="btn btn-success me-3" onclick="sendToWhatsApp()">
+                <i class="fab fa-whatsapp"></i> Send to WhatsApp
+              </button>
+              <button class="btn btn-outline-primary" onclick="emailConfirmation()">
+                <i class="fas fa-envelope"></i> Email Details
+              </button>
+            </div>
+            <div class="mt-4">
+              <a href="index.html" class="btn btn-outline-secondary">Return to Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/safari-builder-integrated.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
+  </body>
+
+</html>

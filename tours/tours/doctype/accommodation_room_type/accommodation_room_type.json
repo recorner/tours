@@ -1,0 +1,148 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-20 19:48:26.012770",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "room_type",
+  "text_dvom",
+  "total_rooms",
+  "max_occupancy",
+  "room_size_sqm",
+  "column_break_xgvc",
+  "base_rate_per_night",
+  "peak_season_rate",
+  "currency",
+  "room_amenities",
+  "bed_configuration",
+  "content_and__media_section",
+  "short_description",
+  "detailed_description",
+  "column_break_djif",
+  "amenities",
+  "gallery"
+ ],
+ "fields": [
+  {
+   "fieldname": "room_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Room Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "text_dvom",
+   "fieldtype": "Text"
+  },
+  {
+   "fieldname": "total_rooms",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Total Rooms"
+  },
+  {
+   "fieldname": "max_occupancy",
+   "fieldtype": "Int",
+   "label": "Max Occupancy"
+  },
+  {
+   "fieldname": "column_break_xgvc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "base_rate_per_night",
+   "fieldtype": "Currency",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Base Rate (per night)",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "peak_season_rate",
+   "fieldtype": "Currency",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Peak Season Rate",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "room_amenities",
+   "fieldtype": "Text",
+   "label": "Room Amenities"
+  },
+  {
+   "fieldname": "room_size_sqm",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Room Size (sqm)"
+  },
+  {
+   "fieldname": "bed_configuration",
+   "fieldtype": "Select",
+   "label": "Bed Configuration",
+   "options": "Single Bed\nDouble Bed\nTwin Beds\nKing Size Bed\nQueen Size Bed\nTriple Beds\nFamily Configuration\nDormitory Style"
+  },
+  {
+   "fieldname": "content_and__media_section",
+   "fieldtype": "Section Break",
+   "label": " Content and  Media"
+  },
+  {
+   "fieldname": "short_description",
+   "fieldtype": "Small Text",
+   "label": "Short Description"
+  },
+  {
+   "fieldname": "detailed_description",
+   "fieldtype": "Text Editor",
+   "label": "Detailed Description"
+  },
+  {
+   "fieldname": "column_break_djif",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amenities",
+   "fieldtype": "Table",
+   "label": "Amenities",
+   "options": "Resource Feature"
+  },
+  {
+   "fieldname": "gallery",
+   "fieldtype": "Table",
+   "label": "Gallery",
+   "options": "Resource Media"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-20 22:06:58.056303",
+ "modified_by": "Administrator",
+ "module": "Tours",
+ "name": "Accommodation Room Type",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

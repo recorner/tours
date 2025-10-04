@@ -1,0 +1,331 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-09-17 11:05:48.307676",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ga84",
+  "amended_from",
+  "naming_series",
+  "customer",
+  "booking_type",
+  "column_break_dfvo",
+  "status",
+  "created_via",
+  "idempotency_key",
+  "notes_section",
+  "notes",
+  "dates_and_passengers_section",
+  "start_date",
+  "end_date",
+  "column_break_ghbd",
+  "adults",
+  "no_of_childern",
+  "total_passengers",
+  "items_and_pricing_tab",
+  "items_and_pricing_section",
+  "items",
+  "price_breakdown",
+  "column_break_bene",
+  "total_amount",
+  "currency",
+  "platform_fee",
+  "conservancy_fee",
+  "operator_payout",
+  "tab_3_tab",
+  "operations_section",
+  "tour_package",
+  "operator",
+  "column_break_akmk",
+  "assigned_driver",
+  "resources_allocated",
+  "accounting_tab",
+  "sales_order",
+  "sales_invoice",
+  "column_break_jfnj",
+  "payment_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ga84",
+   "fieldtype": "Section Break",
+   "label": "Main Information"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Booking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "booking_type",
+   "fieldtype": "Select",
+   "label": "Booking Type"
+  },
+  {
+   "fieldname": "column_break_dfvo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nPending Payment\nConfirmed\nOn Hold\nCancelled\nCompleted\nFailed\nRefunded",
+   "search_index": 1
+  },
+  {
+   "fieldname": "created_via",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Created Via",
+   "options": "Draft\nPending Payment\nConfirmed\nOn Hold\nCancelled\nCompleted\nFailed\nRefunded"
+  },
+  {
+   "fieldname": "idempotency_key",
+   "fieldtype": "Data",
+   "label": "Idempotency Key",
+   "no_copy": 1,
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "dates_and_passengers_section",
+   "fieldtype": "Section Break",
+   "label": "Dates and Passengers"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_ghbd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "adults",
+   "fieldtype": "Int",
+   "label": "Adults",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "no_of_childern",
+   "fieldtype": "Int",
+   "label": "No of Childern",
+   "non_negative": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_passengers",
+   "fieldtype": "Int",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Total Passengers",
+   "options": "adults + no_of_childern",
+   "read_only": 1
+  },
+  {
+   "fieldname": "items_and_pricing_tab",
+   "fieldtype": "Tab Break",
+   "label": "Items and Pricing"
+  },
+  {
+   "fieldname": "items_and_pricing_section",
+   "fieldtype": "Section Break",
+   "label": "items_and_pricing"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Booking Items",
+   "options": "Booking Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "price_breakdown",
+   "fieldtype": "Data",
+   "label": "Price Breakdown"
+  },
+  {
+   "fieldname": "column_break_bene",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "platform_fee",
+   "fieldtype": "Currency",
+   "label": "Platform Fee"
+  },
+  {
+   "fieldname": "conservancy_fee",
+   "fieldtype": "Currency",
+   "label": "Conservancy Fee",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "operator_payout",
+   "fieldtype": "Currency",
+   "label": "Operator Payout",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "tab_3_tab",
+   "fieldtype": "Tab Break",
+   "label": "Operation and Linking"
+  },
+  {
+   "fieldname": "operations_section",
+   "fieldtype": "Section Break",
+   "label": "operations"
+  },
+  {
+   "fieldname": "tour_package",
+   "fieldtype": "Link",
+   "label": "Tour Package",
+   "options": "Tour Package"
+  },
+  {
+   "fieldname": "operator",
+   "fieldtype": "Link",
+   "label": "Operator",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "column_break_akmk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_driver",
+   "fieldtype": "Link",
+   "label": "Assigned Driver",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "resources_allocated",
+   "fieldtype": "Table",
+   "label": "Resources Allocated",
+   "options": "Resource Booking"
+  },
+  {
+   "fieldname": "accounting_tab",
+   "fieldtype": "Tab Break",
+   "label": "Accounting"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "column_break_jfnj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Not Paid\nPart Paid\nPaid\nRefunded",
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-09-19 08:51:04.186433",
+ "modified_by": "Administrator",
+ "module": "Tours",
+ "name": "Booking",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

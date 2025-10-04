@@ -1,0 +1,150 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "creation": "2025-09-20 19:24:54.653667",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "accommodation_name",
+  "destination",
+  "operator",
+  "accommodation_type",
+  "star_rating",
+  "column_break_pake",
+  "total_rooms",
+  "available_for_booking",
+  "more_info_section",
+  "room_types__rates",
+  "location_and_contact_tab",
+  "address",
+  "phone",
+  "email",
+  "website",
+  "gps_coordinates"
+ ],
+ "fields": [
+  {
+   "fieldname": "accommodation_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Accommodation Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Link",
+   "label": "Destination",
+   "options": "Destination",
+   "reqd": 1
+  },
+  {
+   "fieldname": "operator",
+   "fieldtype": "Link",
+   "label": "Operator",
+   "options": "Operator",
+   "reqd": 1
+  },
+  {
+   "fieldname": "accommodation_type",
+   "fieldtype": "Select",
+   "label": "Accommodation type",
+   "options": "Air Bnb\nSafari Lodge\nSafari Camp\nBeach Resort\nCity Hotel\nBoutique Hotel\nGuesthouse\nHostel\nApartment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "star_rating",
+   "fieldtype": "Rating",
+   "label": "Star Rating"
+  },
+  {
+   "fieldname": "location_and_contact_tab",
+   "fieldtype": "Tab Break",
+   "label": "Location and Contact"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "gps_coordinates",
+   "fieldtype": "Geolocation",
+   "label": "GPS Coordinates"
+  },
+  {
+   "fieldname": "column_break_pake",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "total_rooms",
+   "fieldtype": "Int",
+   "label": "Total rooms",
+   "non_negative": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "available_for_booking",
+   "fieldtype": "Check",
+   "label": "Available for Booking"
+  },
+  {
+   "fieldname": "more_info_section",
+   "fieldtype": "Section Break",
+   "label": "more info"
+  },
+  {
+   "fieldname": "room_types__rates",
+   "fieldtype": "Table",
+   "label": "Room Types  Rates",
+   "options": "Accommodation Room Type"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-20 22:09:56.674461",
+ "modified_by": "Administrator",
+ "module": "Tours",
+ "name": "Accommodation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "Accomodation",
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

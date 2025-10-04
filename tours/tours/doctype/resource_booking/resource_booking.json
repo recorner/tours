@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-19 08:25:32.794168",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "basics_section",
+  "resource_type",
+  "resource_item",
+  "service_vehicle",
+  "service_driver",
+  "accommodation",
+  "column_break_ekpa",
+  "date",
+  "start_time",
+  "end_time",
+  "quantity",
+  "status",
+  "description_section",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "basics_section",
+   "fieldtype": "Section Break",
+   "label": "Basics"
+  },
+  {
+   "fieldname": "resource_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Resource Type",
+   "options": "Vehicle\nDriver\nGuide\nAccommodation\nEquipment\nOther",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "resource_item",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Resource Item"
+  },
+  {
+   "fieldname": "column_break_ekpa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "default": "1",
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity",
+   "non_negative": 1
+  },
+  {
+   "default": "Reserved",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Reserved\nConfirmed\nIn Use\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "description_section",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "service_vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Service Vehicle",
+   "options": "Service Vehicle"
+  },
+  {
+   "fieldname": "service_driver",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Service Driver",
+   "options": "Service Driver"
+  },
+  {
+   "fieldname": "accommodation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Accommodation",
+   "options": "Accommodation"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-21 07:12:39.979006",
+ "modified_by": "Administrator",
+ "module": "Tours",
+ "name": "Resource Booking",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

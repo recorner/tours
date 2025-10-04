@@ -7,19 +7,18 @@ app_license = "mit"
 
 # Apps
 # ------------------
-
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "tours",
-# 		"logo": "/assets/tours/logo.png",
-# 		"title": "Tours",
-# 		"route": "/tours",
-# 		"has_permission": "tours.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+ 	{
+ 		"name": "tours",
+ 		"logo": "/assets/tours/img/logo.svg",
+ 		"title": "Tours",
+ 		"route": "/tours",
+ 		"has_permission": "tours.api.permission.has_app_permission",
+ 	}
+]
 
 # Includes in <head>
 # ------------------
@@ -82,13 +81,12 @@ app_license = "mit"
 # Installation
 # ------------
 
-# before_install = "tours.install.before_install"
-# after_install = "tours.install.after_install"
+
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "tours.uninstall.before_uninstall"
+
 # after_uninstall = "tours.uninstall.after_uninstall"
 
 # Integration Setup
@@ -137,13 +135,25 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+
+fixtures = [
+    "Custom Field",
+    "Server Script",
+	"Client Script",
+	"Custom DocPerm",
+    "Property Setter",
+    "Print Format",
+    "Report",
+    "Workflow",
+    "Workflow State",
+    "Workflow Action",
+    "Role",
+    "User Permission",
+    "Module Def",
+    "DocType",
+    "DocType Link",
+    "Notification",
+]
 
 # Scheduled Tasks
 # ---------------

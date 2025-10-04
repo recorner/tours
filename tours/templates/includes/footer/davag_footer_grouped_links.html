@@ -1,0 +1,36 @@
+<div class="footer-grouped-links">
+    {% set grouped_items = footer_items|selectattr('child_items')|list %}
+    {% for group in grouped_items %}
+    {# Enforce maximum 3 columns with proper responsive breakpoints #}
+    <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4 mb-lg-0 footer-group">
+        <div data-label="{{ group.label }}">
+            <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">
+                {%- if group.icon -%}
+                <img src="{{ group.icon }}" alt="{{ group.label }}">
+                {%- else -%}
+                {{ group.label }}
+                {%- endif -%}
+            </h4>
+            <ul class="footer-group-links list-unstyled mb-0">
+                {%- for child in group.child_items -%}
+                <li class="footer-child-item mb-2" data-label="{{ child.label }}">
+                    <a class="link-900 fs-1 fw-medium text-decoration-none" 
+                       href="{{ child.url | abs_url }}"
+                       {% if child.open_in_new_tab %} target="_blank" {% endif %} rel="noreferrer">
+                        {%- if child.icon -%}
+                        <img src="{{ child.icon }}" alt="{{ child.label }}">
+                        {%- else -%}
+                        {{ child.label }}
+                        {%- endif -%}
+                    </a>
+                </li>
+                {%- endfor -%}
+            </ul>
+        </div>
+    </div>
+    {% if loop.index % 3 == 0 and not loop.last %}
+    {# Force new row every 3 columns #}
+    <div class="w-100 d-none d-lg-block"></div>
+    {% endif %}
+    {% endfor %}
+</div>
