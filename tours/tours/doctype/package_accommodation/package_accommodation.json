@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-21 10:50:50.144978",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "accommodation",
+  "number_of_nights",
+  "room_type",
+  "board_basis",
+  "supplement_cost",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "accommodation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Accommodation",
+   "options": "Accommodation",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "number_of_nights",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Number of Nights",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "room_type",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Room Type",
+   "options": "Safari Lodge\nSafari Camp\nBeach Resort\nCity Hotel\nBoutique Hotel\nGuesthouse\nHostel\nApartment"
+  },
+  {
+   "fieldname": "board_basis",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Board Basis",
+   "options": "Room Only\nBed & Breakfast\nHalf Board\nFull Board\nAll Inclusive"
+  },
+  {
+   "fieldname": "supplement_cost",
+   "fieldtype": "Currency",
+   "label": "Supplement Cost",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-21 11:19:06.160999",
+ "modified_by": "Administrator",
+ "module": "Tours",
+ "name": "Package Accommodation",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

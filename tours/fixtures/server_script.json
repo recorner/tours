@@ -1,0 +1,21 @@
+[
+ {
+  "allow_guest": 0,
+  "api_method": null,
+  "cron_format": null,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Server Script",
+  "doctype_event": "Before Save",
+  "enable_rate_limit": 0,
+  "event_frequency": "All",
+  "modified": "2025-09-17 08:30:38.179019",
+  "module": "Tours",
+  "name": "Slug Url",
+  "rate_limit_count": 5,
+  "rate_limit_seconds": 86400,
+  "reference_doctype": "Tour Package",
+  "script": "# Server Script for DocType: Tour Package (Doc Event: Before Save)\r\nimport frappe\r\ndef before_save(doc, method):\r\n    if not doc.slug and doc.package_name:\r\n        slug = frappe.scrub(doc.package_name).replace(' ', '-')\r\n        # ensure uniqueness\r\n        i = 1\r\n        candidate = slug\r\n        while frappe.db.exists('Tour Package', {'slug': candidate}):\r\n            i += 1\r\n            candidate = f\"{slug}-{i}\"\r\n        doc.slug = candidate\r\n",
+  "script_type": "DocType Event"
+ }
+]

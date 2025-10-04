@@ -1,0 +1,25 @@
+<div class="footer-info">
+    <div class="row">
+        <div class="footer-col-left col-lg-6 col-md-6 col-12 mb-3">
+            <div class="text-secondary fs--1 fw-medium">
+                {% if copyright %}
+                &copy; {{ copyright }}
+                {% endif %}
+                {% if footer_address %}
+                {% if copyright %}<br>{% endif %}
+                <span class="d-block mt-2">{{ footer_address }}</span>
+                {% endif %}
+            </div>
+        </div>
+        {# powered #}
+        <div class="footer-col-right col-lg-6 col-md-6 col-12 footer-powered text-lg-end">
+            {% block powered %}
+            {%- if footer_powered -%}
+                <div class="text-secondary fs--1 fw-medium">{{ footer_powered }}</div>
+            {%- else -%}
+                {% include "templates/includes/footer/footer_powered.html" %}
+            {%- endif -%}
+            {% endblock %}
+        </div>
+    </div>
+</div>

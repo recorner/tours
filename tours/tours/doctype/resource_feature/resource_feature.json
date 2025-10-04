@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-20 21:24:50.186063",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "feature_name",
+  "feature_type",
+  "feature_category",
+  "column_break_qctg",
+  "featured",
+  "availability",
+  "section_break_rski",
+  "description",
+  "icon",
+  "column_break_oqwp",
+  "sort_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "feature_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Feature/Amenity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "feature_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Feature type",
+   "options": "Amenity\nService\nFacility\nEquipment\nActivity\nSafety Feature\nAccessibility\nTechnology\nExperience\nBenefit\nInclusion\nExclusion"
+  },
+  {
+   "fieldname": "feature_category",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "feature category",
+   "options": "Accommodation\nDining & Food\nRecreation\nTransportation\nTechnology\nSafety & Security\nAccessibility\nBusiness Services\nSpa & Wellness\nAdventure Activities\nCultural Experiences\nWildlife & Nature\nEquipment & Gear\nPhotography\nEducational\nMedical & Health\nEnvironmental\nSeasonal\nEntertainment\nShopping\nReligious"
+  },
+  {
+   "fieldname": "column_break_qctg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "featured",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Featured"
+  },
+  {
+   "fieldname": "availability",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Availability",
+   "options": "Always Available\nSeasonal\nOn Request\nLimited Hours\nWeather Dependent\nExtra Cost\nComplimentary\nAdvance Booking Required\nAge Restricted\nFitness Level Required"
+  },
+  {
+   "fieldname": "section_break_rski",
+   "fieldtype": "Section Break",
+   "label": "More Info"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "icon",
+   "fieldtype": "Attach Image",
+   "label": "Icon/Image"
+  },
+  {
+   "fieldname": "column_break_oqwp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sort_order",
+   "fieldtype": "Int",
+   "label": "Sort Order"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-20 21:36:29.266927",
+ "modified_by": "Administrator",
+ "module": "Tours",
+ "name": "Resource Feature",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

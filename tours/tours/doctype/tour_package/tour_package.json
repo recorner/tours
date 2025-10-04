@@ -1,0 +1,560 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": " naming_series:",
+ "creation": "2025-09-16 21:00:28.362947",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basics_section",
+  "package_name",
+  "naming_series",
+  "difficulty_level",
+  "column_break_pldt",
+  "slug",
+  "status",
+  "featured__package",
+  "package_category",
+  "valid_from",
+  "valid_to",
+  "destination_and_duration_section",
+  "primary_destination",
+  "recommended_group_size",
+  "column_break_vfje",
+  "end_point",
+  "duration_days",
+  "duration_nights",
+  "min_passengers",
+  "max_passengers",
+  "routes_section",
+  "destinations_covered",
+  "section_break_pmwi",
+  "tour_features",
+  "pricing_section",
+  "base_price_per_person",
+  "currency",
+  "single_room_supplement",
+  "child_discount_",
+  "column_break_wqfr",
+  "pricing_tiers",
+  "seasonal_pricing",
+  "itinerary_and_details_tab",
+  "itinerary",
+  "inclusions",
+  "exclusions",
+  "highlights",
+  "detailed_overview",
+  "faq",
+  "column_break_rjpa",
+  "fitness_requirements",
+  "equipment_needed",
+  "dress_code",
+  "health_requirements",
+  "availability_and_dates_tab",
+  "available_dates",
+  "accommodations",
+  "transportation",
+  "additional_services",
+  "media_and_seo_tab",
+  "media_section",
+  "cover_image",
+  "gallery",
+  "column_break_fslm",
+  "seo_title",
+  "seo_description",
+  "keywords",
+  "show_in_website",
+  "accounting_and_operations_tab",
+  "accounting_section",
+  "income_account",
+  "tax_template",
+  "operator",
+  "commission_percentage",
+  "column_break_hsqj",
+  "operator_payout_per_person",
+  "platform_fee",
+  "payment_terms"
+ ],
+ "fields": [
+  {
+   "fieldname": "basics_section",
+   "fieldtype": "Section Break",
+   "label": "Basics"
+  },
+  {
+   "fieldname": "package_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Package Name",
+   "print_hide": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "DSF-TP-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_pldt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "slug",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Url Slug",
+   "no_copy": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nUnder Review\nActive\nInactive\nSeasonal\nArchived\nDiscontinued"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "destination_and_duration_section",
+   "fieldtype": "Section Break",
+   "label": "Destination and Duration"
+  },
+  {
+   "fieldname": "column_break_vfje",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_point",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "End Point"
+  },
+  {
+   "default": "1",
+   "fieldname": "duration_days",
+   "fieldtype": "Int",
+   "label": "Duration (Days)",
+   "non_negative": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "duration_nights",
+   "fieldtype": "Int",
+   "label": "Duration (Nights)",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "min_passengers",
+   "fieldtype": "Int",
+   "label": "Min Passengers",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "max_passengers",
+   "fieldtype": "Int",
+   "label": "Max Passengers",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "pricing_section",
+   "fieldtype": "Section Break",
+   "label": "Pricing"
+  },
+  {
+   "default": "USD",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "column_break_wqfr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pricing_tiers",
+   "fieldtype": "Table",
+   "label": "Pricing Tiers",
+   "options": "Tour Pricing Tier"
+  },
+  {
+   "fieldname": "seasonal_pricing",
+   "fieldtype": "Table",
+   "label": "Seasonal Pricing",
+   "options": "Tour Season Pricing"
+  },
+  {
+   "fieldname": "itinerary_and_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "itinerary and Details"
+  },
+  {
+   "fieldname": "itinerary",
+   "fieldtype": "Table",
+   "label": "Itinerary",
+   "options": "Tour Itinerary"
+  },
+  {
+   "fieldname": "inclusions",
+   "fieldtype": "Table",
+   "label": "Inclusions",
+   "options": "Tour Inclusion"
+  },
+  {
+   "fieldname": "exclusions",
+   "fieldtype": "Table",
+   "label": "Exclusions",
+   "options": "Tour Exclusion"
+  },
+  {
+   "fieldname": "highlights",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Highlights"
+  },
+  {
+   "fieldname": "detailed_overview",
+   "fieldtype": "Text Editor",
+   "label": "Detailed Overview"
+  },
+  {
+   "fieldname": "faq",
+   "fieldtype": "Table",
+   "label": "FAQ",
+   "options": "Tour FAQ"
+  },
+  {
+   "fieldname": "availability_and_dates_tab",
+   "fieldtype": "Tab Break",
+   "label": "Availability and Dates"
+  },
+  {
+   "fieldname": "available_dates",
+   "fieldtype": "Table",
+   "label": "Available Dates",
+   "options": "Tour Date"
+  },
+  {
+   "fieldname": "media_and_seo_tab",
+   "fieldtype": "Tab Break",
+   "label": "Media and SEO"
+  },
+  {
+   "fieldname": "media_section",
+   "fieldtype": "Section Break",
+   "label": "Media"
+  },
+  {
+   "fieldname": "cover_image",
+   "fieldtype": "Attach Image",
+   "in_preview": 1,
+   "label": "Cover Image"
+  },
+  {
+   "fieldname": "gallery",
+   "fieldtype": "Table",
+   "label": "Gallery",
+   "options": "Resource Media"
+  },
+  {
+   "fieldname": "column_break_fslm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "seo_title",
+   "fieldtype": "Data",
+   "label": "SEO Title"
+  },
+  {
+   "fieldname": "seo_description",
+   "fieldtype": "Small Text",
+   "label": "SEO Description"
+  },
+  {
+   "fieldname": "keywords",
+   "fieldtype": "Small Text",
+   "label": "Keywords"
+  },
+  {
+   "default": "0",
+   "description": "published on website?",
+   "fieldname": "show_in_website",
+   "fieldtype": "Check",
+   "label": "Show in Website"
+  },
+  {
+   "fieldname": "accounting_and_operations_tab",
+   "fieldtype": "Tab Break",
+   "label": " Accounting and Operations"
+  },
+  {
+   "fieldname": "accounting_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting"
+  },
+  {
+   "fieldname": "income_account",
+   "fieldtype": "Link",
+   "label": "Income Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "tax_template",
+   "fieldtype": "Link",
+   "label": "Tax Template",
+   "options": "Sales Taxes and Charges Template"
+  },
+  {
+   "fieldname": "operator",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Operator",
+   "options": "Operator",
+   "reqd": 1
+  },
+  {
+   "fieldname": "commission_percentage",
+   "fieldtype": "Percent",
+   "label": "Commission %",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "primary_destination",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Primary Destination",
+   "options": "Destination",
+   "placeholder": "kamweti",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "difficulty_level",
+   "fieldtype": "Select",
+   "label": "Difficulty Level",
+   "options": "Easy\nModerate\nChallenging\nExpert\nFamily Friendly\nSenior Friendly\nAdventure Level"
+  },
+  {
+   "default": "0",
+   "fieldname": "featured__package",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Featured  Package"
+  },
+  {
+   "fieldname": "package_category",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Package Category",
+   "options": "Wildlife Safari\nCultural Tour\nWedding Vacation\nBirthday Vacation\nAdventure Safari\nPhotography Safari\nLuxury Safari\nBudget Safari\nFamily Safari\nHoneymoon vacation\nMulti-Country vacation\nDay Trip safari"
+  },
+  {
+   "fieldname": "recommended_group_size",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Recommended Group Size"
+  },
+  {
+   "fieldname": "routes_section",
+   "fieldtype": "Section Break",
+   "label": "Routes"
+  },
+  {
+   "fieldname": "destinations_covered",
+   "fieldtype": "Table",
+   "label": "Destinations Covered",
+   "options": "Package Destination"
+  },
+  {
+   "fieldname": "base_price_per_person",
+   "fieldtype": "Currency",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Base Price per Person",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "single_room_supplement",
+   "fieldtype": "Currency",
+   "label": "Single Room Supplement",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "child_discount_",
+   "fieldtype": "Percent",
+   "label": "Child Discount (%)"
+  },
+  {
+   "fieldname": "column_break_rjpa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fitness_requirements",
+   "fieldtype": "Text",
+   "label": "Fitness Requirements"
+  },
+  {
+   "fieldname": "equipment_needed",
+   "fieldtype": "Text",
+   "label": "Equipment Needed"
+  },
+  {
+   "fieldname": "dress_code",
+   "fieldtype": "Text",
+   "label": "Dress Code"
+  },
+  {
+   "fieldname": "health_requirements",
+   "fieldtype": "Text",
+   "label": "Health Requirements"
+  },
+  {
+   "fieldname": "accommodations",
+   "fieldtype": "Table",
+   "label": "Accommodations",
+   "options": "Package Accommodation"
+  },
+  {
+   "fieldname": "transportation",
+   "fieldtype": "Table",
+   "label": "Transportation",
+   "options": "Package Transportation"
+  },
+  {
+   "fieldname": "additional_services",
+   "fieldtype": "Table",
+   "label": "Additional Services",
+   "options": "Additional Service"
+  },
+  {
+   "fieldname": "section_break_pmwi",
+   "fieldtype": "Section Break",
+   "label": "features"
+  },
+  {
+   "fieldname": "tour_features",
+   "fieldtype": "Table",
+   "label": "Tour Features",
+   "options": "Resource Feature"
+  },
+  {
+   "fieldname": "valid_from",
+   "fieldtype": "Datetime",
+   "label": "Valid From"
+  },
+  {
+   "fieldname": "valid_to",
+   "fieldtype": "Datetime",
+   "label": "Valid To"
+  },
+  {
+   "fieldname": "column_break_hsqj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "operator_payout_per_person",
+   "fieldtype": "Currency",
+   "label": "Operator Payout per Person"
+  },
+  {
+   "fieldname": "platform_fee",
+   "fieldtype": "Currency",
+   "label": "Platform Fee"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Text",
+   "label": "Payment Terms"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-21 12:39:10.574560",
+ "modified_by": "Administrator",
+ "module": "Tours",
+ "name": "Tour Package",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Master Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Website Manager",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}

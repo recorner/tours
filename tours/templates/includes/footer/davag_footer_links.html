@@ -1,0 +1,30 @@
+{% macro footer_link(item) %}
+<a href="{{ item.url | abs_url }}" {% if item.open_in_new_tab %} target="_blank" {% endif %} class="link-900 fs-1 fw-medium text-decoration-none d-block mb-2" rel="noreferrer">
+    {%- if item.icon -%}
+    <img src="{{ item.icon }}" alt="{{ item.label }}">
+    {%- else -%}
+    {{ _(item.label) }}
+    {%- endif -%}
+</a>
+{% endmacro %}
+
+<div class="footer-links">
+    {# Spread links across available columns for better spacing #}
+    <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+        <div class="row">
+            {%- set simple_items = footer_items|selectattr('label')|rejectattr('parent_label')|rejectattr('child_items')|list -%}
+            {%- set half_length = (simple_items|length + 1) // 2 -%}
+            
+            <div class="col-6">
+                {%- for item in simple_items[:half_length] %}
+                {{ footer_link(item) }}
+                {% endfor -%}
+            </div>
+            <div class="col-6">
+                {%- for item in simple_items[half_length:] %}
+                {{ footer_link(item) }}
+                {% endfor -%}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,230 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:destination_name",
+ "creation": "2025-09-16 14:31:19.648317",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_tab",
+  "basic_information_section",
+  "destination_name",
+  "column_break_hncw",
+  "country",
+  "region",
+  "destination_type",
+  "content_and_media_section",
+  "short_description",
+  "media_section",
+  "images",
+  "destination_features",
+  "detailed_description_section",
+  "detailed_description",
+  "web_settings",
+  "web_settings_column",
+  "slug",
+  "column_break_tqdc",
+  "best_season",
+  "currency",
+  "seo_tab",
+  "seo_section",
+  "seo_title",
+  "column_break_xnzk",
+  "seo_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_tab",
+   "fieldtype": "Tab Break",
+   "label": "Basic "
+  },
+  {
+   "fieldname": "basic_information_section",
+   "fieldtype": "Section Break",
+   "label": "Destination Details"
+  },
+  {
+   "fieldname": "destination_name",
+   "fieldtype": "Data",
+   "label": "Destination Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_hncw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Country",
+   "options": "Country",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Region",
+   "placeholder": "kenyan coast",
+   "translatable": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "content_and_media_section",
+   "fieldtype": "Section Break",
+   "label": "Content and Media"
+  },
+  {
+   "description": "Brief Description of the destination",
+   "fieldname": "short_description",
+   "fieldtype": "Small Text",
+   "label": "Short Description",
+   "placeholder": "description......",
+   "report_hide": 1,
+   "reqd": 1,
+   "translatable": 1
+  },
+  {
+   "description": "detaailed Destination Description",
+   "fieldname": "detailed_description",
+   "fieldtype": "Text Editor",
+   "label": "Detailed Description",
+   "placeholder": "Details......"
+  },
+  {
+   "fieldname": "web_settings",
+   "fieldtype": "Tab Break",
+   "label": "Web Settings"
+  },
+  {
+   "fieldname": "web_settings_column",
+   "fieldtype": "Column Break",
+   "label": "Web Settings"
+  },
+  {
+   "fieldname": "slug",
+   "fieldtype": "Data",
+   "label": "Url Slug",
+   "reqd": 1,
+   "translatable": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_tqdc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "All Year",
+   "description": "Best Destination Season",
+   "fieldname": "best_season",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Best Season",
+   "options": "All Year\nWet Season\nSummer\nwinter\nautumn\nDry Season",
+   "translatable": 1
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "seo_tab",
+   "fieldtype": "Tab Break",
+   "label": "SEO"
+  },
+  {
+   "fieldname": "seo_section",
+   "fieldtype": "Section Break",
+   "label": "SEO"
+  },
+  {
+   "description": "Enter SEO Title",
+   "fieldname": "seo_title",
+   "fieldtype": "Data",
+   "label": "SEO Title",
+   "placeholder": "SEO..."
+  },
+  {
+   "fieldname": "column_break_xnzk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "seo_description",
+   "fieldtype": "Small Text",
+   "label": "SEO Description"
+  },
+  {
+   "fieldname": "destination_type",
+   "fieldtype": "Select",
+   "label": "Destination Type",
+   "options": "Safari Destination\nBeach Destination\nCity Destination\nMountain Destination\nCultural Site\nAdventure Destination"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "detailed_description_section",
+   "fieldtype": "Section Break",
+   "label": "Detailed Description"
+  },
+  {
+   "fieldname": "media_section",
+   "fieldtype": "Section Break",
+   "label": "media"
+  },
+  {
+   "fieldname": "images",
+   "fieldtype": "Table",
+   "label": "Images",
+   "options": "Resource Media"
+  },
+  {
+   "fieldname": "destination_features",
+   "fieldtype": "Table",
+   "label": "Destination features",
+   "options": "Resource Feature"
+  }
+ ],
+ "grid_page_length": 50,
+ "links": [],
+ "modified": "2025-09-20 22:49:24.963605",
+ "modified_by": "Administrator",
+ "module": "Tours",
+ "name": "Destination",
+ "naming_rule": "By fieldname",
+ "owner": "westronet@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}

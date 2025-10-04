@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-21 09:50:07.531854",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "destination",
+  "days_in_destination",
+  "activities_at_destination",
+  "overnight_stay",
+  "destination_highlights",
+  "column_break_sdsp",
+  "route_highlights",
+  "detailed_route_description",
+  "route_information_section",
+  "start_location",
+  "end_location"
+ ],
+ "fields": [
+  {
+   "fieldname": "destination",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Destination",
+   "options": "Destination",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "days_in_destination",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Days in Destination"
+  },
+  {
+   "fieldname": "activities_at_destination",
+   "fieldtype": "Text",
+   "label": "Activities at Destination"
+  },
+  {
+   "default": "0",
+   "fieldname": "overnight_stay",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Overnight Stay"
+  },
+  {
+   "fieldname": "destination_highlights",
+   "fieldtype": "Small Text",
+   "label": "Destination Highlights"
+  },
+  {
+   "fieldname": "route_information_section",
+   "fieldtype": "Section Break",
+   "label": "Route Information"
+  },
+  {
+   "fieldname": "end_location",
+   "fieldtype": "Link",
+   "label": "End Location",
+   "options": "Tours Location"
+  },
+  {
+   "fieldname": "start_location",
+   "fieldtype": "Link",
+   "label": "Start Location",
+   "options": "Tours Location"
+  },
+  {
+   "fieldname": "column_break_sdsp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "route_highlights",
+   "fieldtype": "Small Text",
+   "label": "Route Highlights"
+  },
+  {
+   "fieldname": "detailed_route_description",
+   "fieldtype": "Text",
+   "label": "Detailed Route Description"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-21 10:22:33.110397",
+ "modified_by": "Administrator",
+ "module": "Tours",
+ "name": "Package Destination",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

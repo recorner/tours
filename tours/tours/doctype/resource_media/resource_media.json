@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-20 21:37:26.655852",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "media_file",
+  "title",
+  "media_type",
+  "category",
+  "column_break_zstu",
+  "featured",
+  "show_on_website",
+  "file_size",
+  "dimensions",
+  "date_taken",
+  "description_section",
+  "description",
+  "caption",
+  "sort_order",
+  "column_break_oghh",
+  "photographer_credit",
+  "alt_text"
+ ],
+ "fields": [
+  {
+   "fieldname": "media_file",
+   "fieldtype": "Attach",
+   "label": "Media File"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "media_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Media Type",
+   "options": "Image\nVideo\nAudio\nDocument\n360\u00b0 Photo\nVirtual Tour\nMap\nBrochure\nCertificate\nFloor Plan\nMenu\nPrice List"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "Exterior\nInterior\nRooms & Accommodation\nActivities & Experiences\nDining & Cuisine\nWildlife & Nature\nCultural & Heritage\nTransportation\nStaff & Service\nFacilities & Amenities\nAdventure & Sports\nLandscapes & Scenery\nPeople & Culture\nEquipment & Gear\nCertificates & Awards\nMaps & Directions\nBefore & After\nProcess & Behind Scenes\nSeasonal\nEvents & Celebrations\nNight Views\nAerial Views"
+  },
+  {
+   "fieldname": "column_break_zstu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "featured",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Featured"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_on_website",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Show on Website"
+  },
+  {
+   "fieldname": "description_section",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "caption",
+   "fieldtype": "Small Text",
+   "label": "Caption"
+  },
+  {
+   "fieldname": "sort_order",
+   "fieldtype": "Int",
+   "label": "Sort Order"
+  },
+  {
+   "fieldname": "column_break_oghh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "photographer_credit",
+   "fieldtype": "Data",
+   "label": "photographer_credit"
+  },
+  {
+   "fieldname": "alt_text",
+   "fieldtype": "Data",
+   "label": "Alt Text"
+  },
+  {
+   "fieldname": "file_size",
+   "fieldtype": "Data",
+   "label": "File Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dimensions",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dimensions"
+  },
+  {
+   "fieldname": "date_taken",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Taken"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-20 21:54:38.860829",
+ "modified_by": "Administrator",
+ "module": "Tours",
+ "name": "Resource Media",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

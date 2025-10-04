@@ -1,0 +1,34 @@
+<!-- Post-login tools (themed) -->
+{% if not only_static %}
+
+    {% if frappe.session.user != 'Guest' %}
+    <li class="nav-item dropdown logged-in ms-lg-3" id="website-post-login" data-label="website-post-login" style="display: none">
+        <a href="#" class="nav-link d-flex align-items-center" data-bs-toggle="dropdown">
+            <span class="user-image-wrapper rounded-circle border border-2 border-warning"></span>
+            <i class="ms-2 fas fa-chevron-down small text-muted"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end shadow-lg rounded-3 border-0">
+            {%- for child in post_login -%}
+                {%- if child.url -%}
+                <a class="dropdown-item py-2" href="{{ child.url | abs_url }}"
+                    {% if child.open_in_new_tab %} target="_blank" {% endif %} rel="nofollow">
+                    {{ child.label }}
+                </a>
+                {%- endif -%}
+            {%- endfor -%}
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item py-2" href="/app">{{ _('Switch To Desk') }}</a>
+            <a class="dropdown-item py-2" href="/apps">{{ _('Apps') }}</a>
+        </ul>
+    </li>
+    {% endif %}
+
+    {% if not hide_login %}
+    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+        <a class="btn btn-outline-primary px-3" href="/login">
+            {{ _("Login") }}
+        </a>
+    </li>
+    {% endif %}
+
+{% endif %}

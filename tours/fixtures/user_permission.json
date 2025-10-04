@@ -1,0 +1,28 @@
+[
+ {
+  "allow": "Employee",
+  "applicable_for": null,
+  "apply_to_all_doctypes": 1,
+  "docstatus": 0,
+  "doctype": "User Permission",
+  "for_value": "DSF-EMP-00001",
+  "hide_descendants": 0,
+  "is_default": 0,
+  "modified": "2025-09-16 09:25:17.649441",
+  "name": "708eniba1m",
+  "user": "westronet@gmail.com"
+ },
+ {
+  "allow": "Company",
+  "applicable_for": null,
+  "apply_to_all_doctypes": 1,
+  "docstatus": 0,
+  "doctype": "User Permission",
+  "for_value": "Davag Safaris",
+  "hide_descendants": 0,
+  "is_default": 0,
+  "modified": "2025-09-16 09:25:17.693750",
+  "name": "709cjfvl20",
+  "user": "westronet@gmail.com"
+ }
+]
